@@ -2,7 +2,7 @@
     "name": "encourage",
     "displayName": "Encourage",
     "description": "Visual Studio Code extension that adds little encouragement while you work",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "rebornix",
     "engines": {
         "vscode": "^1.0.0"
@@ -16,6 +16,14 @@
     "activationEvents": [
         "*"
     ],
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/rubyide/vscode-ruby.git"
+	},
+	"bugs": {
+		"url": "https://github.com/rubyide/vscode-ruby/issues"
+	},
+
     "main": "./out/src/extension",
     "contributes": {
         "commands": [{
