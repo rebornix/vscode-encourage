@@ -17,13 +17,12 @@
         "*"
     ],
     "repository": {
-		"type": "git",
-		"url": "https://github.com/rubyide/vscode-ruby.git"
-	},
-	"bugs": {
-		"url": "https://github.com/rubyide/vscode-ruby/issues"
-	},
-
+        "type": "git",
+        "url": "https://github.com/rebornix/vscode-encourage.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rebornix/vscode-encourage/issues"
+    },
     "main": "./out/src/extension",
     "contributes": {
         "commands": [{
