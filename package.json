@@ -2,7 +2,7 @@
     "name": "encourage",
     "displayName": "Encourage",
     "description": "Visual Studio Code extension that adds little encouragement while you work",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "rebornix",
     "engines": {
         "vscode": "^1.0.0"

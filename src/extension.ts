@@ -46,6 +46,19 @@ class Encourager {
     'People like you! 💞'
     ];
     
+    private _timer: any;
+    private statusBarAutoDismiss(millisecBeforeDismiss: any) {
+        if (!this._statusBarItem) {
+            return;
+        }
+
+        clearTimeout(this._timer);
+        let that = this;
+        this._timer = setTimeout(function(){
+            that._statusBarItem.hide();
+        },millisecBeforeDismiss); 
+    }
+    
     private getRandomEncouragement() {
         return this._encouragements[Math.floor(Math.random() * this._encouragements.length)]
     }
@@ -66,6 +79,7 @@ class Encourager {
 
         this._statusBarItem.text = this.getRandomEncouragement();
         this._statusBarItem.show();
+        this.statusBarAutoDismiss(3000);
     }
 
     dispose() {
